@@ -365,7 +365,3 @@ class Qtcv(QMainWindow, qtcvui.Ui_MainWindow):
         form = Qtcv()  # We set the form to be our ExampleApp (design)
         form.show()  # Show the form
         app.exec_()  # And execute the app
-
-
-if __name__ == '__main__':
-    Qtcv.run()

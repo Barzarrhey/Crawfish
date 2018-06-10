@@ -60,12 +60,13 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "OpenCV"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Crawfish"))
         self.buttonLoad.setText(_translate("MainWindow", "Load Video"))
         self.buttonStart.setText(_translate("MainWindow", "Start"))
         self.buttonPause.setText(_translate("MainWindow", "Pause"))
         self.buttonCamera.setText(_translate("MainWindow", "Camera"))
-        self.videoWidget.setText(_translate("MainWindow", "<br><br><br><br><br><br><br><br><br><br><br>Start camera or select a video file"))
+        self.videoWidget.setText(_translate("MainWindow", "<br><br><br><br><br><br><br><br><br><br><br>Start camera"
+                                                          " or select a video file\n让我们吃着小龙虾，探索世界"))
         self.labelTrack.setText(_translate("MainWindow", "<font color=\'green\'>(x, y)</font>"))
         self.buttonCal.setText(_translate("MainWindow", "Calibrate"))
         self.labelPos.setText(_translate("MainWindow", "(x, y) m"))
