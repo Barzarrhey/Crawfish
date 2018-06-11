@@ -119,9 +119,13 @@ class Qtcv(QMainWindow, qtcvui.Ui_MainWindow):
                 self.isCalibrating = False
                 self.isCalibrated = True
         else:
-            xmin, ymin, xmax, ymax = self.selection
-            self.dragStart = None
-            self.trackWindow = (xmin, ymin, xmax - xmin, ymax - ymin)
+            try:
+                xmin, ymin, xmax, ymax = self.selection
+            except TypeError as e:
+                pass
+            else:
+                self.dragStart = None
+                self.trackWindow = (xmin, ymin, xmax - xmin, ymax - ymin)
 
     def calibrate(self):
         self.pause_video()
