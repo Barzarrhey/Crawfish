@@ -4,11 +4,16 @@
 
 from qtcv import Qtcv
 from start import drawSnake
-import sys
+import os
 
 def main():
-    drawsnake = drawSnake()
-    drawsnake.draw()
-    Qtcv.run()
+    # drawsnake = drawSnake()
+    # drawsnake.draw()
+    # Qtcv.run()
+    cmd1 = "python start.py"
+    cmd2 = "python qtcv.py"
+    os.system(cmd1)
+    os.system(cmd2)
+
 
 main()
