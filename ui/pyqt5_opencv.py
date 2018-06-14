@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
-# Created by barzarrhey on 2018/6/3
 
-# Form implementation generated from reading ui file './ui/pyqt5_opencv.ui'
+# Form implementation generated from reading ui file 'pyqt5_opencv.ui'
 #
 # Created by: PyQt5 UI code generator 5.9
 #

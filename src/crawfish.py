@@ -10,8 +10,8 @@ def main():
     # drawsnake = drawSnake()
     # drawsnake.draw()
     # Qtcv.run()
-    cmd1 = "python start.py"
-    cmd2 = "python qtcv.py"
+    cmd1 = "python /bin/start.exe"
+    cmd2 = "python /bin/qtcv.exe"
     os.system(cmd1)
     os.system(cmd2)
 
