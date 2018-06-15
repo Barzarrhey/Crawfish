@@ -353,7 +353,8 @@ class Qtcv(QMainWindow, qtcvui.Ui_MainWindow):
 
             # Define the codec and create VideoWriter object
             fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
-            self.videoSaver = cv2.VideoWriter("./output.mp4", fourcc, self.fps, self.frameSize)
+            outputVideoPath = "./Video/output_" + datetime.datetime.now().strftime("%Y%m%d_%H%M%S") + ".mp4"
+            self.videoSaver = cv2.VideoWriter(outputVideoPath, fourcc, self.fps, self.frameSize)
 
         except Exception as e:
             self.capture = None
